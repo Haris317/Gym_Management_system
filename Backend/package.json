@@ -1,0 +1,65 @@
+{
+  "name": "gym-management-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Gym Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node start-server.js",
+    "dev": "nodemon start-server.js",
+    "server": "node server.js",
+    "seed-plans": "node seedPlans.js",
+    "seed-classes": "node seedClasses.js",
+    "create-admin": "node createAdmin.js",
+    "test": "jest",
+    "test-connection": "node testConnection.js",
+    "test-api": "node testAPI.js",
+    "test-member": "node testMemberCreation.js",
+    "test-class": "node testClassCreation.js",
+    "test-enrollment": "node testClassEnrollment.js",
+    "test-plans": "node testMemberPlans.js",
+    "test-cors": "node testCORS.js",
+    "test-trainer-plans": "node testTrainerPlans.js",
+    "test-plan-creation": "node testPlanCreation.js",
+    "test-member-view-plans": "node testMemberViewPlans.js",
+    "test-member-dashboard": "node testMemberDashboard.js",
+    "test-auth-enhancements": "node testAuthEnhancements.js",
+    "quick-test": "node quick-test.js",
+    "setup": "npm run create-admin && npm run seed-plans && npm run seed-classes"
+  },
+  "keywords": [
+    "gym",
+    "management",
+    "api",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Gym Management Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^6.15.0",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.1",
+    "qrcode": "^1.5.3",
+    "stripe": "^11.18.0",
+    "twilio": "^4.7.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
