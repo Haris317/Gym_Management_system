@@ -94,13 +94,6 @@ Create `.env` files in both Backend and Frontend directories using the `.env.exa
 2. **Trainer Dashboard**: Create workout plans and manage assigned members
 3. **Member Dashboard**: View classes, make payments, track attendance
 
-## Default Login Credentials
-
-After running the setup script:
-- **Admin**: admin@gym.com / admin123
-- **Trainer**: trainer@gym.com / trainer123
-- **Member**: member@gym.com / member123
-
 ## API Endpoints
 
 - `/api/auth` - Authentication routes
